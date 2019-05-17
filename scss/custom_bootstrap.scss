@@ -1,0 +1,15 @@
+html{
+    scroll-behavior: smooth;
+    .navbar-nav{
+        .nav-link{
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    
+    .navbar-toggler{
+        color: white !important;
+        border-color: white !important;
+    }
+}
