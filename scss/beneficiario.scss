@@ -1,9 +1,10 @@
 body {
   height: 100vh;
+
   nav {
     &.texto-preto {
       background-color: white;
-      box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
       .custom-toggler.navbar-toggler {
         border: 2px solid black;
       }
@@ -41,19 +42,68 @@ body {
     height: 100vh;
     padding-top: 130px;
     scroll-behavior: smooth;
+    @include make-container();
+    padding: auto 50px;
+    .conteudo {
+      padding: 15px;
+      margin-right: 0;
+      margin-left: 0;
+      @include make-row();
+      .servico-box {
+        text-align: center;
+        @include media-breakpoint-up(xs) {
+          @include make-col(6);
+          .text-primary {
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 0.8rem;
+          }
+        }
+        @include media-breakpoint-up(sm) {
+          @include make-col(12);
+        }
+        @include media-breakpoint-up(md) {
+          @include make-col(6);
+          .text-primary {
+            font-size: 4rem;
+          }
+          h3 {
+            font-size: 1.25rem;
+          }
+        }
+        @include media-breakpoint-up(lg) {
+          @include make-col(3);
+          .text-primary {
+            font-size: 4rem;
+          }
+          h3 {
+            font-size: 1.75rem;
+          }
+        }
+        transition: 0.4s;
+        &:hover {
+          background-color: $bg-green;
+          color: white;
+          transition: 0.4s;
+          .text-primary {
+            &:before {
+              color: white;
+            }
+          }
+        }
+      }
+    }
     /* overflow-y: scroll; */
     &#principal {
-      background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0, rgba(92, 77, 66, 0.8) 100%), 
-      url(../img/0062.jpg);
+      background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0, rgba(92, 77, 66, 0.8) 100%), url(../img/0062.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: scroll;
       background-size: cover;
       min-height: 40rem;
-      padding-bottom: 0;
       @include make-container();
       .conteudo {
-        padding: 15px;
         @include make-row();
         &-titulo {
           @include make-col(12);
@@ -87,45 +137,23 @@ body {
       }
     }
     &#servicos {
-      @include make-container();
-      .conteudo {
-        @include make-row();
-        .servico-box {
-          text-align: center;
-          @include media-breakpoint-up(xs) {
-            @include make-col(12);
-          }
-          @include media-breakpoint-up(sm) {
-            @include make-col(12);
-          }
-          @include media-breakpoint-up(md) {
-            @include make-col(6);
-          }
-          @include media-breakpoint-up(lg) {
-            @include make-col(3);
-          }
-          transition: 0.4s;
-          &:hover {
-            background-color: $bg-green;
-            color: white;
-            transition: 0.4s;
-            .text-primary{
-              &:before{
-                color: white;
-              }
-            }
-          }
-        }
-      }
     }
-    &#documentos{
-      background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0, rgba(92, 77, 66, 0.8) 100%), 
-      url(../img/documentos.jpg);
+    &#documentos {
+      background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0, rgba(92, 77, 66, 0.8) 100%),
+        url(../img/documentos.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: scroll;
       background-size: cover;
       min-height: 40rem;
+      .documentos-titulo {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+      }
+      .conteudo {
+        padding: -15px;
+      }
     }
   }
 }

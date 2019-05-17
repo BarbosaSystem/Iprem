@@ -1,39 +1,28 @@
 /*
 Error: Undefined mixin 'make-container'.
-        on line 54 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss, in `make-container'
-        from line 54 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss
+        on line 45 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss, in `make-container'
+        from line 45 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss
 
-49:       background-repeat: no-repeat;
-50:       background-attachment: scroll;
-51:       background-size: cover;
-52:       min-height: 40rem;
-53:       padding-bottom: 0;
-54:       @include make-container();
-55:       .conteudo {
-56:         padding: 15px;
-57:         @include make-row();
-58:         &-titulo {
-59:           @include make-col(12);
+40: 
+41:   section {
+42:     height: 100vh;
+43:     padding-top: 130px;
+44:     scroll-behavior: smooth;
+45:     @include make-container();
+46:     padding: auto 50px;
+47:     .conteudo {
+48:       padding: 15px;
+49:       margin-right: 0;
+50:       margin-left: 0;
 
 Backtrace:
-C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss:54:in `make-container'
-C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss:54
+C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss:45:in `make-container'
+C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss:45
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -88,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'make-container'.\A         on line 54 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss, in `make-container'\A         from line 54 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss\A \A 49:       background-repeat: no-repeat;\A 50:       background-attachment: scroll;\A 51:       background-size: cover;\A 52:       min-height: 40rem;\A 53:       padding-bottom: 0;\A 54:       @include make-container();\A 55:       .conteudo {\A 56:         padding: 15px;\A 57:         @include make-row();\A 58:         &-titulo {\A 59:           @include make-col(12);"; }
+  content: "Error: Undefined mixin 'make-container'.\A         on line 45 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss, in `make-container'\A         from line 45 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss\A \A 40: \A 41:   section {\A 42:     height: 100vh;\A 43:     padding-top: 130px;\A 44:     scroll-behavior: smooth;\A 45:     @include make-container();\A 46:     padding: auto 50px;\A 47:     .conteudo {\A 48:       padding: 15px;\A 49:       margin-right: 0;\A 50:       margin-left: 0;"; }
