@@ -19,6 +19,9 @@ body {
         text-transform: uppercase;
         .nav-link {
           color: black;
+          &.active{
+            color: #8bc34a;
+          }
           /* background-color: #fff; */
         }
       }
@@ -61,7 +64,13 @@ body {
           }
         }
         @include media-breakpoint-up(sm) {
-          @include make-col(12);
+          @include make-col(6);
+          .text-primary {
+            font-size: 2.2rem;
+          }
+          h3 {
+            font-size: 1rem;
+          }
         }
         @include media-breakpoint-up(md) {
           @include make-col(6);
