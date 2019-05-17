@@ -1,78 +1,131 @@
-body{
-    height: 100vh;
-    nav{
-        &.texto-preto{
-            .navbar-nav{
-                transition: 1s;
-                font-weight: 700;
-                text-transform: uppercase;
-                .nav-link{
-                     color: black;
-        /* background-color: #fff; */
-                    
-                }
-            }
+body {
+  height: 100vh;
+  nav {
+    &.texto-preto {
+      background-color: white;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+      .custom-toggler.navbar-toggler {
+        border: 2px solid black;
+      }
+      .custom-toggler {
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         }
-        .container{
-            .navbar-brand{
-                img{
-                    height: 100%;
-                }
-            }
-            
+      }
+      .navbar-nav {
+        transition: 1s;
+        font-weight: 700;
+        text-transform: uppercase;
+        .nav-link {
+          color: black;
+          /* background-color: #fff; */
         }
+      }
     }
-   /*  #mainNav.navbar-scrolled {
+    .container {
+      .navbar-brand {
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+  /*  #mainNav.navbar-scrolled {
         -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         color: black;
         /* background-color: #fff; 
         transition: 1s;*/
-        
-    
-    
-    section{
-        height: 100vh;
-        padding-top: 130px;
-        scroll-behavior: smooth;
-        /* overflow-y: scroll; */
-        .container{
-           
+
+  section {
+    height: 100vh;
+    padding-top: 130px;
+    scroll-behavior: smooth;
+    /* overflow-y: scroll; */
+    &#principal {
+      background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0, rgba(92, 77, 66, 0.8) 100%), 
+      url(../img/0062.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-size: cover;
+      min-height: 40rem;
+      padding-bottom: 0;
+      @include make-container();
+      .conteudo {
+        padding: 15px;
+        @include make-row();
+        &-titulo {
+          @include make-col(12);
+          text-align: center;
+          color: $bg-green;
         }
-        &#home{
-            background:
-            linear-gradient(to bottom,rgba(92,77,66,.8) 0,rgba(92,77,66,.8) 100%),
-            url(../img/0062.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-size: cover;
-            min-height: 40rem;
-            padding-bottom: 0;
-            @include make-container();
-            /* .caixa-titulo{
-                @include make-row();
-                @include make-col(12);
-                h2{
-                    text-align: center;
-                    color: $bg-green;
-                }
-                .servico{
-                    background-color: black;
-                    @include media-breakpoint-up(xs) {
-                        @include make-col(12);
-                    }
-                    @include media-breakpoint-up(sm) {
-                        @include make-col(12);
-                    }
-                    @include media-breakpoint-up(md) {
-                        @include make-col(3);
-                        @include make-col-offset(4);
-                    }
-                }
-            } */
-            
+        .servico {
+          margin-top: 20px;
+          background-color: white;
+          text-align: center;
+
+          @include media-breakpoint-up(xs) {
+            @include make-col(12);
+          }
+          @include media-breakpoint-up(sm) {
+            @include make-col(12);
+          }
+          @include media-breakpoint-up(md) {
+            @include make-col(3);
+          }
+          &-titulo {
+            text-align: center;
+          }
+          &-icon {
+            .fas {
+              color: $bg-green;
+              font-size: 5rem;
+            }
+          }
         }
-        
+      }
     }
+    &#servicos {
+      @include make-container();
+      .conteudo {
+        @include make-row();
+        .servico-box {
+          text-align: center;
+          @include media-breakpoint-up(xs) {
+            @include make-col(12);
+          }
+          @include media-breakpoint-up(sm) {
+            @include make-col(12);
+          }
+          @include media-breakpoint-up(md) {
+            @include make-col(6);
+          }
+          @include media-breakpoint-up(lg) {
+            @include make-col(3);
+          }
+          transition: 0.4s;
+          &:hover {
+            background-color: $bg-green;
+            color: white;
+            transition: 0.4s;
+            .text-primary{
+              &:before{
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+    &#documentos{
+      background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0, rgba(92, 77, 66, 0.8) 100%), 
+      url(../img/documentos.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-size: cover;
+      min-height: 40rem;
+    }
+  }
 }
