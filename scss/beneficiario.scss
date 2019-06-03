@@ -2,6 +2,7 @@ body {
   height: 80vh;
 
   nav {
+
     /* display: none !important; */
     &.texto-preto {
       background-color: white;
@@ -185,9 +186,11 @@ body {
             .carousel-item {
               .carousel-caption {
                 background: rgba(0, 0, 0, 0.2);
-                &-link{
+
+                &-link {
                   color: white !important;
-                  p{
+
+                  p {
                     display: inline-block;
                   }
                 }
@@ -195,15 +198,17 @@ body {
                 &:hover {
                   background: rgba(0, 0, 0, 0.4);
                 }
+
                 @include media-breakpoint-up(xs) {
                   font-weight: bold;
-                  i{
+
+                  i {
                     display: none;
                   }
                 }
-      
+
                 @include media-breakpoint-up(sm) {
-                  i{
+                  i {
                     display: inline-block;
                   }
                 }
@@ -548,13 +553,11 @@ body {
           height: 100%;
           width: 800px;
           float: left;
-          border: 20px solid transparent;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-attachment: scroll;
-          background-size: cover;
-        }
+          /* border: 20px solid transparent; 
+          border-right: 20px solid transparent;
+          border-bottom: 20px solid transparent;*/
 
+        }
         &-noticia {
           text-align: justify;
           font-size: 1.2rem;
@@ -562,25 +565,61 @@ body {
 
         @include media-breakpoint-up(xs) {
           @include make-col(12);
+
+          img {
+            width: 100%;
+            height: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+          }
+          &-titulo{
+            text-align: center;
+            h1{
+              font-size: 1.5rem;
+            }
+          }
         }
 
         @include media-breakpoint-up(sm) {
           @include make-col(12);
-
-        }
-
-        /* .info-foto{
-          @include make-col(6);
-          img{
-            display: inline;
+          img {
+            width: 100%;
+            height: 70%;
+            border-right: 20px solid transparent;
+            /* background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover; */
           }
-          p{
-            display: inline-block;
+          &-titulo{
+            text-align: center;
+            h1{
+              font-size: 2rem;
+            }
           }
         }
-        .info-texto{
-          @include make-col(6);
-        } */
+        @include media-breakpoint-up(md) {
+          img {
+            width: 50%;
+            height: 100%;
+            border-right: 20px solid transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+          }
+          &-titulo{
+            text-align: center;
+            h1{
+              font-size: 2rem;
+            }
+          }
+        }
+        a{
+          margin-top: 20px;
+        }
       }
 
       .controle {
