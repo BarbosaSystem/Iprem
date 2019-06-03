@@ -2,7 +2,7 @@
     "use strict"; // Start of use strict
   
     // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+   /*  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -13,7 +13,7 @@
           return false;
         }
       }
-    });
+    }); */
   
     // Closes responsive menu when a scroll trigger link is clicked
     $('.js-scroll-trigger').click(function() {
@@ -25,13 +25,21 @@
       target: '#mainNav',
       offset: 75
     });
-  
+    $(window).scroll(function () {
+      $('nav').toggleClass('active', $(this).scrollTop() > 800);
+
+      /* if($(this).scrollTop() > 800){
+          $(this).fadeOut();
+      } */
+  })
     // Collapse Navbar
     var navbarCollapse = function() {
       if ($("#mainNav").offset().top > 100) {
         $("#mainNav").addClass("texto-preto");
+        $('.fixed-top').attr('style','top: 0');
       } else {
         $("#mainNav").removeClass("texto-preto");
+        $('.fixed-top').attr('style','top: 30px');
       }
     };
     // Collapse now if page is not at top
@@ -40,7 +48,7 @@
     $(window).scroll(navbarCollapse);
   
     // Magnific popup calls
-    $('#portfolio').magnificPopup({
+    /* $('#portfolio').magnificPopup({
       delegate: 'a',
       type: 'image',
       tLoading: 'Loading image #%curr%...',
@@ -53,7 +61,44 @@
       image: {
         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
       }
-    });
+    }); */
   
-  })(jQuery); // End of use strict
+  })(jQuery); 
+  
+        /*  $(window).on('load', function () {
+                var codigo = localStorage.getItem('opcao');
+                if (codigo != null) {
+                    $('.modal').modal('hide');
+                } else {
+                    $('.modal').modal('show');
+                }
+            });
+
+            $("#beneficiario-codigo").click(function () {
+                guardarValor(1);
+            });
+            $("#prestador-codigo").click(function () {
+                $('.menu').remove();
+                guardarValor(2);
+            });
+
+            function guardarValor(codigo) {
+                var opcao = {
+                    'codigo': codigo
+                };
+                localStorage.setItem('opcao', JSON.stringify(opcao));
+            } */
+            /*  $(window).scroll(example);
+
+             function example() {
+                 
+                 var tempScrollTop = $('#contato').position();
+                 /* var tempScrollTop = $(window).scrollTop(); 
+                 console.log("Scroll from Top: " + tempScrollTop.toString());
+             }; */
+            /* $(document).scroll(function () {
+                var $nav = $(".navbar-nav");
+                $nav.toggleClass('texto-preto', $(this).scrollTop() > $nav.height());
+            }); */
+  // End of use strict
   

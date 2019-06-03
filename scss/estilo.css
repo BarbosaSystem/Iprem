@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'make-container'.
-        on line 14 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\estilo.scss, in `make-container'
-        from line 14 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\estilo.scss
+        on line 14 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\estilo.scss, in `make-container'
+        from line 14 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\estilo.scss
 
 9:         url('../img/bg-masthead.jpg');
 10:         background-position: center;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'make-container'.
 19:         .header-logo{
 
 Backtrace:
-C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\estilo.scss:14:in `make-container'
-C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\estilo.scss:14
+C:\Users\Leonardo\Documents\Projeto\Iprem\scss\estilo.scss:14:in `make-container'
+C:\Users\Leonardo\Documents\Projeto\Iprem\scss\estilo.scss:14
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'make-container'.\A         on line 14 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\estilo.scss, in `make-container'\A         from line 14 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\estilo.scss\A \A 9:         url('../img/bg-masthead.jpg');\A 10:         background-position: center;\A 11:         background-repeat: no-repeat;\A 12:         background-attachment: scroll;\A 13:         background-size: cover;\A 14:         @include make-container();\A 15:     .header{\A 16:         @include make-row();\A 17:         padding: 10px;\A 18:         \A 19:         .header-logo{"; }
+  content: "Error: Undefined mixin 'make-container'.\A         on line 14 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\estilo.scss, in `make-container'\A         from line 14 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\estilo.scss\A \A 9:         url('../img/bg-masthead.jpg');\A 10:         background-position: center;\A 11:         background-repeat: no-repeat;\A 12:         background-attachment: scroll;\A 13:         background-size: cover;\A 14:         @include make-container();\A 15:     .header{\A 16:         @include make-row();\A 17:         padding: 10px;\A 18:         \A 19:         .header-logo{"; }
