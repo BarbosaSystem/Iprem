@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'make-container'.
-        on line 58 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\Iprem\scss\beneficiario.scss, in `make-container'
-        from line 58 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\Iprem\scss\beneficiario.scss
+        on line 58 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss, in `make-container'
+        from line 58 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss
 
 53: 
 54:   section {
@@ -16,8 +16,8 @@ Error: Undefined mixin 'make-container'.
 63:       text-transform: uppercase;
 
 Backtrace:
-C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\Iprem\scss\beneficiario.scss:58:in `make-container'
-C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\Iprem\scss\beneficiario.scss:58
+C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss:58:in `make-container'
+C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss:58
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'make-container'.\A         on line 58 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\Iprem\scss\beneficiario.scss, in `make-container'\A         from line 58 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\Iprem\scss\beneficiario.scss\A \A 53: \A 54:   section {\A 55:     min-height: 100vh;\A 56:     padding-top: 130px;\A 57:     scroll-behavior: smooth;\A 58:     @include make-container();\A 59:     padding: auto 50px;\A 60: \A 61:     h3 {\A 62:       font-size: 2rem;\A 63:       text-transform: uppercase;"; }
+  content: "Error: Undefined mixin 'make-container'.\A         on line 58 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss, in `make-container'\A         from line 58 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\beneficiario.scss\A \A 53: \A 54:   section {\A 55:     min-height: 100vh;\A 56:     padding-top: 130px;\A 57:     scroll-behavior: smooth;\A 58:     @include make-container();\A 59:     padding: auto 50px;\A 60: \A 61:     h3 {\A 62:       font-size: 2rem;\A 63:       text-transform: uppercase;"; }
