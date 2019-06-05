@@ -68,9 +68,9 @@ body {
       }
     }
 
-    &:nth-child(odd) {
+    /* &:nth-child(odd) {
       background-color: #e5e5e5;
-    }
+    } */
 
     &:last-child {
       min-height: 50px !important;
@@ -152,14 +152,6 @@ body {
 
     /* overflow-y: scroll; */
     &#principal {
-      /* background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0, rgba(92, 77, 66, 0.8) 100%), 
-      url(../img/0062.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: scroll;
-      background-size: cover;
-      min-height: 40rem; */
-      @include make-container();
 
       .conteudo {
         @include make-row();
@@ -266,14 +258,6 @@ body {
     }
 
     &#documentos {
-      /* background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0, rgba(92, 77, 66, 0.8) 100%),
-        url(../img/documentos.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: scroll;
-      background-size: cover; */
-      /* min-height: 40rem; */
-
       .documentos-titulo {
         text-align: center;
         text-transform: uppercase;
@@ -372,7 +356,6 @@ body {
 
     &#licitacao {
 
-      /* background-color: #e5e5e5; */
       i {
         color: brown;
       }
