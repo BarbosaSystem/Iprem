@@ -1,0 +1,25 @@
+#prestador {
+    @include make-col(12);
+
+    .prestador-info {
+      text-align: center;
+
+      @include media-breakpoint-up(xs) {
+        @include make-col(12);
+        margin-top: 10px;
+      }
+
+      /*@include media-breakpoint-up(sm) {
+        @include make-col(12);
+      } */
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+        padding-top: 30px;
+      }
+
+      &-area {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  }

@@ -1,0 +1,49 @@
+#rodape {
+    min-height: 10px !important;
+    padding: 15px;
+    background-color: $primary;
+
+
+    /* @include media-breakpoint-up(xs) {
+        bottom: 0;
+        position: absolute;
+    } */
+
+    /* margin-top: 50px;
+    background-color: $primary;
+    height: 10vh;
+    padding-top: 0; */
+    .info-texto {
+        @include media-breakpoint-up(xs) {
+            @include make-col(12);
+            text-align: center;
+        }
+
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+
+        }
+    }
+
+    .info-voltar {
+        @include media-breakpoint-up(xs) {
+            @include make-col(12);
+            text-align: right;
+            line-height: 4;
+
+            a {
+                color: black;
+
+                i {
+                    font-size: 2rem;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+
+        }
+    }
+}

@@ -1,0 +1,57 @@
+#localizacao {
+    padding-bottom: 0;
+    @include clearfix();
+
+    i {
+      color: #cc3333;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    @include media-breakpoint-up(xs) {
+      @include make-col(12);
+      /* h3{
+        font-size: 1.3rem;
+      } */
+    }
+
+    .mapa {
+      padding: 0 10px;
+
+      @include media-breakpoint-up(xs) {
+        @include make-col(12);
+
+      }
+
+      @include media-breakpoint-up(sm) {
+        @include make-col(12);
+      }
+
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
+    }
+
+    .institucional {
+      @include make-col(4);
+      background-color: #282a2b;
+      padding: 5px;
+      bottom: 0;
+
+      .inst-titulo {
+        padding: 5px;
+
+        h4 {
+          font-size: 1rem;
+          color: #b2bec3;
+        }
+      }
+
+      .inst-cont {
+        height: 100%;
+        color: white;
+      }
+    }
+  }

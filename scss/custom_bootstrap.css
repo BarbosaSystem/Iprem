@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'media-breakpoint-up'.
-        on line 33 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss, in `media-breakpoint-up'
-        from line 33 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss
+        on line 74 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss, in `media-breakpoint-up'
+        from line 74 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss
 
-28:                 }
-29: 
-30:             }
-31:         }
-32: 
-33:         @include media-breakpoint-up(xs) {
-34:             display: none;
-35:         }
-36: 
-37:         @include media-breakpoint-up(sm) {
-38:             @include make-col(12);
+69:                 }
+70: 
+71:             }
+72:         }
+73: 
+74:         @include media-breakpoint-up(xs) {
+75:             display: none;
+76:         }
+77: 
+78:         @include media-breakpoint-up(sm) {
+79:             @include make-col(12);
 
 Backtrace:
-C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss:33:in `media-breakpoint-up'
-C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss:33
+C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss:74:in `media-breakpoint-up'
+C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss:74
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media-breakpoint-up'.\A         on line 33 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss, in `media-breakpoint-up'\A         from line 33 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss\A \A 28:                 }\A 29: \A 30:             }\A 31:         }\A 32: \A 33:         @include media-breakpoint-up(xs) {\A 34:             display: none;\A 35:         }\A 36: \A 37:         @include media-breakpoint-up(sm) {\A 38:             @include make-col(12);"; }
+  content: "Error: Undefined mixin 'media-breakpoint-up'.\A         on line 74 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss, in `media-breakpoint-up'\A         from line 74 of C:\Users\leonardo.oliveira\Documents\Projetos\Iprem\scss\custom_bootstrap.scss\A \A 69:                 }\A 70: \A 71:             }\A 72:         }\A 73: \A 74:         @include media-breakpoint-up(xs) {\A 75:             display: none;\A 76:         }\A 77: \A 78:         @include media-breakpoint-up(sm) {\A 79:             @include make-col(12);"; }

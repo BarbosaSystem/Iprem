@@ -1,0 +1,96 @@
+#documentos {
+    .documentos-titulo {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .accordion {
+      @include media-breakpoint-up(xs) {
+        @include make-col(12);
+
+        .card {
+          .card-header {
+            h5 {
+              text-align: center;
+
+              .btn-link {
+                color: green;
+                font-weight: 700;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+              }
+            }
+          }
+
+          .card-body {
+            ul {
+              padding-left: 0;
+
+              li {
+                /* font-size: 2rem; */
+                background: url(../img/file-pdf-solid.svg) no-repeat;
+                list-style: none;
+                padding-left: 45px;
+                margin: 5px 0;
+                transition: 0.3s;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:hover {
+                  color: green;
+                  font-weight: 900;
+
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @include media-breakpoint-up(sm) {
+        @include make-col(12);
+      }
+
+      @include media-breakpoint-up(md) {
+        @include make-col(12);
+
+        .card {
+          .card-header {
+            h5 {
+              text-align: center;
+
+              .btn-link {
+                color: green;
+                font-weight: 700;
+                font-size: 1.2rem;
+              }
+            }
+          }
+
+          .card-body {
+            ul {
+              li {
+                font-size: 1.5rem;
+                list-style: none;
+                margin: 5px 0;
+                transition: 0.3s;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:hover {
+                  color: green;
+                  font-weight: 900;
+
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    .conteudo {
+      padding: -15px;
+    }
+  }

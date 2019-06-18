@@ -1,6 +1,47 @@
 html {
     scroll-behavior: smooth;
+    nav {
 
+        /* display: none !important; */
+        &.texto-preto {
+          background-color: white;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    
+          .custom-toggler.navbar-toggler {
+            border: 2px solid black;
+          }
+    
+          .custom-toggler {
+            .navbar-toggler-icon {
+              background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+          }
+    
+          .navbar-nav {
+            transition: 1s;
+            font-weight: 700;
+            /* text-transform: uppercase; */
+    
+            .nav-link {
+              color: black;
+    
+              &.active {
+                color: #8bc34a;
+              }
+    
+              /* background-color: #fff; */
+            }
+          }
+        }
+    
+        .container {
+          .navbar-brand {
+            img {
+              height: 100%;
+            }
+          }
+        }
+      }
     .acessivel {
         background-color: gray;
         height: 30px;
@@ -125,3 +166,68 @@ html {
     }
 
 }
+.servico-box {
+    text-align: center;
+
+    @include media-breakpoint-up(xs) {
+      @include make-col(6);
+
+      .text-primary {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+
+      .text-primary {
+        font-size: 2.2rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+
+      .text-primary {
+        font-size: 4rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(3);
+
+      .text-primary {
+        font-size: 4rem;
+      }
+
+      h3 {
+        font-size: 1.75rem;
+      }
+    }
+
+    transition: 0.4s;
+
+    &:hover {
+      background-color: $bg-green;
+      color: white;
+      transition: 0.4s;
+
+      .text-primary {
+        &:before {
+          color: white;
+        }
+      }
+    }
+  }

@@ -1,0 +1,40 @@
+section {
+  min-height: 100vh;
+  padding-top: 120px;
+  scroll-behavior: smooth;
+  @include make-container();
+  /* padding: auto 50px; */
+
+  /* @include media-breakpoint-up(xs) {
+    min-height: 80vh;
+  }
+  @include media-breakpoint-up(md) {
+    min-height: 75vh;
+  } */
+
+  h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  /* &:nth-child(odd) {
+      background-color: #e5e5e5;
+    } */
+
+  &:last-child {
+    min-height: 50px !important;
+    padding-top: 0;
+  }
+
+  .conteudo {
+    padding: 5px 0;
+    margin-right: 0;
+    margin-left: 0;
+    @include make-row();
+  }
+}
