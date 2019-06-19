@@ -1,46 +1,78 @@
 #documentos {
   @include media-breakpoint-up(xs) {
     min-height: 100vh;
+    .nav-tabs {
+      .nav-item {
+        .nav-link {
+          &.active {
+            color: green;
+            font-weight: 700;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .tab-content{
+      ul {
+        padding-left: 0;
+        li {
+          /* font-size: 2rem; */
+          background: url(../img/file-pdf-solid.svg) no-repeat;
+          list-style: none;
+          padding-left: 45px;
+          margin: 5px 0;
+          transition: 0.3s;
+          text-transform: uppercase;
+          cursor: pointer;
+  
+          &:hover {
+            color: green;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  
   }
   @include media-breakpoint-up(md) {
     min-height: 0vh;
+    .nav-tabs {
+      .nav-item {
+        .nav-link {
+          &.active {
+            color: green;
+            font-weight: 700;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .tab-content{
+      ul {
+        padding-left: 0;
+        li {
+          font-size: 1.5rem;
+          list-style: none;
+          margin: 5px 0;
+          transition: 0.3s;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          &:hover {
+            color: green;
+            font-weight: 900;
+
+          }
+        }
+      }
+    }
   }
   .documentos-titulo {
     text-align: center;
     text-transform: uppercase;
   }
 
-  .nav-tabs {
-    .nav-item {
-      .nav-link {
-        &.active {
-          color: green;
-          font-weight: 700;
-          font-size: 1.2rem;
-        }
-      }
-    }
-  }
-  .tab-content{
-    ul {
-      padding-left: 0;
-      li {
-        /* font-size: 2rem; */
-        background: url(../img/file-pdf-solid.svg) no-repeat;
-        list-style: none;
-        padding-left: 45px;
-        margin: 5px 0;
-        transition: 0.3s;
-        text-transform: uppercase;
-        cursor: pointer;
-
-        &:hover {
-          color: green;
-          font-weight: 700;
-        }
-      }
-    }
-  }
+ 
 
 
   .conteudo {
