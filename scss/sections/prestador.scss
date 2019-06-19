@@ -1,12 +1,14 @@
 #prestador {
     @include make-col(12);
-
     .prestador-info {
       text-align: center;
 
       @include media-breakpoint-up(xs) {
         @include make-col(12);
         margin-top: 10px;
+        h4{
+          font-size: 1em;
+        }
       }
 
       /*@include media-breakpoint-up(sm) {

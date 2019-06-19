@@ -1,13 +1,13 @@
 #rodape {
-    min-height: 10px !important;
+    min-height: 10vh !important;
     padding: 15px;
     background-color: $primary;
 
 
-    /* @include media-breakpoint-up(xs) {
+    @include media-breakpoint-up(sm) {
         bottom: 0;
         position: absolute;
-    } */
+    }
 
     /* margin-top: 50px;
     background-color: $primary;

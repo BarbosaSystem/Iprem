@@ -1,22 +1,31 @@
 section {
-  min-height: 100vh;
+ /*  min-height: 100vh; */
   padding-top: 120px;
   scroll-behavior: smooth;
   @include make-container();
   /* padding: auto 50px; */
 
-  /* @include media-breakpoint-up(xs) {
-    min-height: 80vh;
+  @include media-breakpoint-up(xs) {
+    padding-top: 100px;
+    .my-4{
+      margin: 0 auto !important;
+    }
   }
   @include media-breakpoint-up(md) {
-    min-height: 75vh;
-  } */
+    padding-top: 120px;
+  } 
 
   h3 {
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
-
+    @include media-breakpoint-up(xs) {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 2rem;
+    } 
     i {
       margin-right: 5px;
     }
