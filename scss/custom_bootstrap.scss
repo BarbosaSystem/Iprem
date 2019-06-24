@@ -74,6 +74,7 @@ html {
           @include media-breakpoint-up(xs) {
             display: none;
           }
+
           @include media-breakpoint-up(sm) {
             display: inline-block;
           }
@@ -149,176 +150,195 @@ html {
         }
       }
     }
+
   }
 
-  .custom-toggler.navbar-toggler {
-    border: 2px solid black;
-  }
-
-  .custom-toggler {
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    }
-  }
-
-  .dropdown-submenu {
-    position: relative;
-  }
-
-  .dropdown-submenu a::after {
-    transform: rotate(-90deg);
-    position: absolute;
-    right: 6px;
-    top: .8em;
-  }
-
-  .dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-left: .1rem;
-    margin-right: .1rem;
-  }
-
-  .dropdown-item:hover,
-  .dropdown-item:focus {
-    color: #16181b;
-    text-decoration: none;
-    background-color: $bg-green;
-  }
-
-}
-
-.servico-box {
-  text-align: center;
-
-  @include media-breakpoint-up(xs) {
-    @include make-col(6);
-    .card-img-top{
-      height: 120px;
-      width: 119px;
-    }
-    .text-primary {
-      font-size: 2rem;
-    }
-
-    h3 {
-      font-size: 0.8rem;
-    }
-  }
-
-  @include media-breakpoint-up(sm) {
-    @include make-col(6);
-
-    .text-primary {
-      font-size: 2.2rem;
-    }
-
-    h3 {
-      font-size: 1rem;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    @include make-col(6);
-    .card-img-top{
-      height: 100%;
-      
-    }
-    .text-primary {
-      font-size: 4rem;
-    }
-
-    h3 {
-      &.deliberativo{
-        font-size: 1.25rem !important;
+  .nav-tabs {
+    .nav-item {
+      .nav-link {
+        &.active {
+          color: #fff;
+          background-color: #8bc34a;
+          border-color: #808080 #808080 #fff;
+        }
       }
-      font-size: 1.25rem;
     }
   }
-
-  @include media-breakpoint-up(lg) {
-    @include make-col(3);
-
-    .text-primary {
-      font-size: 4rem;
+    .custom-toggler.navbar-toggler {
+      border: 2px solid black;
     }
 
-    h3 {
-      font-size: 1.75rem;
+    .custom-toggler {
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
     }
+
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu a::after {
+      transform: rotate(-90deg);
+      position: absolute;
+      right: 6px;
+      top: .8em;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-left: .1rem;
+      margin-right: .1rem;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+      color: #16181b;
+      text-decoration: none;
+      background-color: $bg-green;
+    }
+
   }
 
-  transition: 0.4s;
+  .servico-box {
+    text-align: center;
 
-  &:hover {
-    background-color: $bg-green;
-    color: white;
+    @include media-breakpoint-up(xs) {
+      @include make-col(6);
+
+      .card-img-top {
+        height: 120px;
+        width: 119px;
+      }
+
+      .text-primary {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+
+      .text-primary {
+        font-size: 2.2rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+
+      .card-img-top {
+        height: 100%;
+
+      }
+
+      .text-primary {
+        font-size: 4rem;
+      }
+
+      h3 {
+        &.deliberativo {
+          font-size: 1.25rem !important;
+        }
+
+        font-size: 1.25rem;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(3);
+
+      .text-primary {
+        font-size: 4rem;
+      }
+
+      h3 {
+        font-size: 1.75rem;
+      }
+    }
+
     transition: 0.4s;
 
-    .text-primary {
-      &:before {
-        color: white;
+    &:hover {
+      background-color: $bg-green;
+      color: white;
+      transition: 0.4s;
+
+      .text-primary {
+        &:before {
+          color: white;
+        }
       }
     }
   }
-}
-.box-deliberativo {
-  text-align: center;
-  @include media-breakpoint-up(xs) {
-    @include make-col(6);
 
-    .text-primary {
-      font-size: 2rem;
+  .box-deliberativo {
+    text-align: center;
+
+    @include media-breakpoint-up(xs) {
+      @include make-col(6);
+
+      .text-primary {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 0.8rem;
+      }
     }
 
-    h3 {
-      font-size: 0.8rem;
-    }
-  }
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
 
-  @include media-breakpoint-up(sm) {
-    @include make-col(6);
+      .text-primary {
+        font-size: 2.2rem;
+      }
 
-    .text-primary {
-      font-size: 2.2rem;
-    }
-
-    h3 {
-      font-size: 1rem;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    @include make-col(6);
-
-    .text-primary {
-      font-size: 3rem;
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    @include make-col(3);
-
-    .text-primary {
-      font-size: 4rem;
+      h3 {
+        font-size: 1rem;
+      }
     }
 
-    h3 {
-      font-size: 1.75rem;
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+
+      .text-primary {
+        font-size: 3rem;
+      }
     }
-  }
 
-  transition: 0.4s;
+    @include media-breakpoint-up(lg) {
+      @include make-col(3);
 
-  &:hover {
-    background-color: $bg-green;
-    color: white;
+      .text-primary {
+        font-size: 4rem;
+      }
+
+      h3 {
+        font-size: 1.75rem;
+      }
+    }
+
     transition: 0.4s;
 
-    .text-primary {
-      &:before {
-        color: white;
+    &:hover {
+      background-color: $bg-green;
+      color: white;
+      transition: 0.4s;
+
+      .text-primary {
+        &:before {
+          color: white;
+        }
       }
     }
   }
-}

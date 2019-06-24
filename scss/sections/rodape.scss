@@ -1,6 +1,6 @@
 #rodape {
-    display: none;
-    min-height: 10vh !important;
+    @include make-container();
+    min-height: 5vh !important;
     padding: 15px;
     background-color: $primary;
 
@@ -15,14 +15,16 @@
     height: 10vh;
     padding-top: 0; */
     .info-texto {
+        position: relative;
+        bottom: 0;
         @include media-breakpoint-up(xs) {
             @include make-col(12);
             text-align: center;
+            font-size: 0.8rem;
         }
 
         @include media-breakpoint-up(sm) {
-            @include make-col(6);
-
+           
         }
     }
 

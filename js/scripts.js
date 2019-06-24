@@ -13,8 +13,19 @@
           return false;
         }
       }
-    }); */
-  
+    });
+    var altura_body = $("body").height();
+    console.log(altura_body);
+    var altura_prestador = $("#prestador").height();
+    console.log("Altura do prestador: " + altura_prestador);
+
+    var offsetTop = $("#prestador").offset().top;
+
+    var altura_html = $("#prestador").height();
+    console.log(altura_body - (altura_prestador-offsetTop)); */
+
+
+
     $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
       if (!$(this).next().hasClass('show')) {
         $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");

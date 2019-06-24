@@ -1,15 +1,47 @@
 .cons-info{
+    margin: 10px;
+    text-align: center;
     @include media-breakpoint-up(xs) {
         @include make-col(12);
         h5{
-            font-size: 1rem;
+            font-size: 0.9rem;
+        }
+        .btn{
+            margin: 5px;
         }
     }
-    @include media-breakpoint-up(ms) {
+    @include media-breakpoint-up(sm) {
         @include make-col(10);
         @include make-col-offset(1);
         h5{
             font-size: 1.25rem;
         }
+    }
+    &.fundo{
+        background: #f6f6f6;
+    }
+}
+.coluna{
+    @include media-breakpoint-up(xs) {
+        @include make-col(12);
+        text-align: center;
+       
+    }
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+        /* @include make-col-offset(1); */
+
+    }
+    &-titulo{
+        padding: 15px;
+        font-weight: bold;
+    }
+    
+}
+.list-group{
+    
+    padding: 10px;
+    &-item{
+        border: none;
     }
 }
