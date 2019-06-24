@@ -1,50 +1,28 @@
 /*
 Error: Undefined mixin 'media-breakpoint-up'.
-        on line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss, in `media-breakpoint-up'
-        from line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss
+        on line 25 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\noticia.scss, in `media-breakpoint-up'
+        from line 25 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\noticia.scss
 
-5:     .navbar-brand {
-6:       .img-logo {
-7:         height: 69px;
-8:         width: 158px;
-9: 
-10:         @include media-breakpoint-up(xs) {
-11:           height: 51.75px;
-12:           width: 118.5px;
-13:         }
-14: 
-15:         @include media-breakpoint-up(md) {
+20:       &-noticia {
+21:         text-align: justify;
+22:         font-size: 1.2rem;
+23:       }
+24: 
+25:       @include media-breakpoint-up(xs) {
+26:         @include make-col(12);
+27: 
+28:         img {
+29:           width: 100%;
+30:           height: auto;
 
 Backtrace:
-C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss:10:in `media-breakpoint-up'
-C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss:10
+C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\noticia.scss:25:in `media-breakpoint-up'
+C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\noticia.scss:25
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -99,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media-breakpoint-up'.\A         on line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss, in `media-breakpoint-up'\A         from line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss\A \A 5:     .navbar-brand {\A 6:       .img-logo {\A 7:         height: 69px;\A 8:         width: 158px;\A 9: \A 10:         @include media-breakpoint-up(xs) {\A 11:           height: 51.75px;\A 12:           width: 118.5px;\A 13:         }\A 14: \A 15:         @include media-breakpoint-up(md) {"; }
+  content: "Error: Undefined mixin 'media-breakpoint-up'.\A         on line 25 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\noticia.scss, in `media-breakpoint-up'\A         from line 25 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\noticia.scss\A \A 20:       &-noticia {\A 21:         text-align: justify;\A 22:         font-size: 1.2rem;\A 23:       }\A 24: \A 25:       @include media-breakpoint-up(xs) {\A 26:         @include make-col(12);\A 27: \A 28:         img {\A 29:           width: 100%;\A 30:           height: auto;"; }

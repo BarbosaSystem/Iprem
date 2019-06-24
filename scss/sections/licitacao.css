@@ -1,39 +1,28 @@
 /*
 Error: Undefined mixin 'media-breakpoint-up'.
-        on line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss, in `media-breakpoint-up'
-        from line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss
+        on line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\licitacao.scss, in `media-breakpoint-up'
+        from line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\licitacao.scss
 
-5:     .navbar-brand {
-6:       .img-logo {
-7:         height: 69px;
-8:         width: 158px;
-9: 
-10:         @include media-breakpoint-up(xs) {
-11:           height: 51.75px;
-12:           width: 118.5px;
-13:         }
-14: 
-15:         @include media-breakpoint-up(md) {
+5:     }
+6:     .conteudo {
+7:         .servico-box {
+8:             text-align: center;
+9:     
+10:             @include media-breakpoint-up(xs) {
+11:               @include make-col(6);
+12:     
+13:               .text-primary {
+14:                 font-size: 2rem;
+15:               }
 
 Backtrace:
-C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss:10:in `media-breakpoint-up'
-C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss:10
+C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\licitacao.scss:10:in `media-breakpoint-up'
+C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\licitacao.scss:10
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -99,4 +88,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media-breakpoint-up'.\A         on line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss, in `media-breakpoint-up'\A         from line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\custom_bootstrap.scss\A \A 5:     .navbar-brand {\A 6:       .img-logo {\A 7:         height: 69px;\A 8:         width: 158px;\A 9: \A 10:         @include media-breakpoint-up(xs) {\A 11:           height: 51.75px;\A 12:           width: 118.5px;\A 13:         }\A 14: \A 15:         @include media-breakpoint-up(md) {"; }
+  content: "Error: Undefined mixin 'media-breakpoint-up'.\A         on line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\licitacao.scss, in `media-breakpoint-up'\A         from line 10 of C:\Users\Leonardo\Documents\Projeto\Iprem\scss\sections\licitacao.scss\A \A 5:     }\A 6:     .conteudo {\A 7:         .servico-box {\A 8:             text-align: center;\A 9:     \A 10:             @include media-breakpoint-up(xs) {\A 11:               @include make-col(6);\A 12:     \A 13:               .text-primary {\A 14:                 font-size: 2rem;\A 15:               }"; }

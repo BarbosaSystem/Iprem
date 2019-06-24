@@ -1,0 +1,15 @@
+.cons-info{
+    @include media-breakpoint-up(xs) {
+        @include make-col(12);
+        h5{
+            font-size: 1rem;
+        }
+    }
+    @include media-breakpoint-up(ms) {
+        @include make-col(10);
+        @include make-col-offset(1);
+        h5{
+            font-size: 1.25rem;
+        }
+    }
+}
