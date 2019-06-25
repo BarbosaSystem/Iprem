@@ -43,8 +43,8 @@ section {
 
   .conteudo {
     padding: 5px 0;
+    @include make-row();
     margin-right: 0;
     margin-left: 0;
-    @include make-row();
   }
 }
