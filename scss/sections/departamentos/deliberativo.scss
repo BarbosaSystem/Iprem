@@ -1,5 +1,4 @@
 .cons-info {
-    margin: 10px;
     text-align: center;
 
     @include media-breakpoint-up(xs) {
@@ -10,7 +9,7 @@
         }
 
         .btn {
-            margin: 5px;
+            margin: 5px 0px;
         }
     }
 
@@ -33,7 +32,7 @@
 .coluna {
     @include media-breakpoint-up(xs) {
         @include make-col(12);
-        text-align: center;
+        /* text-align: center; */
 
     }
 
@@ -53,22 +52,46 @@
 .list-group {
 
     padding: 10px;
-
-    &-item {
+    li{
         border: none;
+        text-align: left;
     }
+    /* &-item {
+        border: none;
+    } */
 }
 
-.departamentos {
-    @include clearfix();
-    .departamentos-chefia{
+.departamentos-chefia{
+    @include media-breakpoint-up(xs) {
         @include make-col(12);
         text-align: center;
+        img {
+            height: 80%;
+            width: 50%;
+        }
     }
-    .departamentos-info{
+
+    @include media-breakpoint-up(sm) {
+        @include make-col(4);
+    }
+}
+.departamentos-info{
+    text-align: justify;
+    @include media-breakpoint-up(xs) {
         @include make-col(12);
-        text-align: justify;
+        margin-top: 10px;
     }
+    @include media-breakpoint-up(sm) {
+        @include make-col(8);
+    }
+    /* @include media-breakpoint-up(md) {
+        @include make-col(6);
+    } */
+}
+.departamentos {
+    
+    
+    
     /* &-chefia {
         @include media-breakpoint-up(xs) {
             @include make-col(12);

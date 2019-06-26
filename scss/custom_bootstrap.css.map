@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,IAAI,CACA,eAAe,CAAE,MAAM,CAEnB,0BAAS,CACL,KAAK,CAAE,KAAK,CACZ,WAAW,CAAE,GAAG,CAChB,cAAc,CAAE,SAAS,CAIjC,mCAA+B,CAC3B,MAAM,CAAE,eAAe,CAGvB,yCAAqB,CACjB,gBAAgB,CAAE,sOAAsO",
-"sources": ["custom_bootstrap.scss"],
-"names": [],
-"file": "custom_bootstrap.css"
-}

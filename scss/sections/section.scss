@@ -1,11 +1,12 @@
 section {
   padding-top: 120px;
+  min-height: 100vh;
   scroll-behavior: smooth;
   @include make-container();
   /* padding: auto 50px; */
 
   @include media-breakpoint-up(xs) {
-    min-height: 100vh;
+    
     padding-top: 100px;
     .my-4{
       margin: 0 auto !important;
@@ -33,7 +34,7 @@ section {
   }
 
   /* &:nth-child(odd) {
-      background-color: #e5e5e5;
+      background-color: #E0E0E0;
     } */
 
   &:last-child {
